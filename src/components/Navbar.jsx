@@ -1,11 +1,13 @@
 import { Menu, X } from "lucide-react";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import logo from "../assets/logo.png";
 import { navItems } from "../constants";
+import './Navbar.css';
 
 const Navbar = () => {
   const [mobileDrawerOpen, setMobileDrawerOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const dropdownRef = useRef(null);
 
   const toggleNavbar = () => {
     setMobileDrawerOpen(!mobileDrawerOpen);
@@ -14,6 +16,19 @@ const Navbar = () => {
   const toggleDropdown = () => {
     setDropdownOpen(!dropdownOpen);
   };
+
+  const handleClickOutside = (event) => {
+    if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+      setDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <nav className="sticky top-0 z-50 py-3 backdrop-blur-lg border-b border-neutral-700/20">
@@ -25,13 +40,16 @@ const Navbar = () => {
           <ul className="hidden lg:flex ml-14 space-x-12">
             {navItems.map((item, index) => (
               <li key={index}>
-                <a href={item.href} className="hover:text-blue-800 text-base">
+                <a
+                  href={item.href}
+                  className=" text-base"
+                >
                   {item.label}
                 </a>
               </li>
             ))}
             {/* Dropdown menu */}
-            <li className="relative">
+            <li className="relative" ref={dropdownRef}>
               <button
                 onClick={toggleDropdown}
                 className="hover:text-blue-800 text-base"
@@ -43,19 +61,22 @@ const Navbar = () => {
                   <div className="p-4">
                     <h3 className="font-bold mb-2">For Partners</h3>
                     <ul className="mb-4">
-                      <li><a href="#" className="block py-1">Partners Home</a></li>
-                      <li><a href="#" className="block py-1">Partner Program</a></li>
-                      <li><a href="#" className="block py-1">Support</a></li>
-                      <li><a href="#" className="block py-1">Tools</a></li>
+                      <li><a href="#" className="block py-1 ">Partners Home</a></li>
+                      <li><a href="#" className="block py-1 ">Partner Program</a></li>
+                      <li><a href="#" className="block py-1 ">Support</a></li>
+                      <li><a href="#" className="block py-1 ">Tools</a></li>
                     </ul>
                     <h3 className="font-bold mb-2">Already a Partner?</h3>
-                    <a href="#" className="block py-2 px-4 bg-blue-500 text-white text-center rounded-md mb-2">
+                    <a
+                      href="#"
+                      className="block py-2 px-4 bg-blue-500 text-white text-center rounded-md mb-2 hover:bg-blue-600 hover:text-white"
+                    >
                       Log in
                     </a>
                     <ul>
-                      <li><a href="#" className="block py-1">Find a Cisco Partner</a></li>
-                      <li><a href="#" className="block py-1">Meet our Partners</a></li>
-                      <li><a href="#" className="block py-1">Become a Cisco Partner</a></li>
+                      <li><a href="#" className="block py-1 ">Find a Cisco Partner</a></li>
+                      <li><a href="#" className="block py-1 ">Meet our Partners</a></li>
+                      <li><a href="#" className="block py-1 ">Become a Cisco Partner</a></li>
                     </ul>
                   </div>
                 </div>

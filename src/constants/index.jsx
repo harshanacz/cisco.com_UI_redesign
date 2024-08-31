@@ -3,7 +3,7 @@ import {  UserPlus, CreditCard, User, MapPin } from "lucide-react";
 
 //Navbar
 export const navItems = [
-  { label: "Products and Services", href: "#" },
+  { label: "Products & Services", href: "#" },
   { label: "Solutions", href: "#" },
   { label: "Support", href: "#" },
 ];
