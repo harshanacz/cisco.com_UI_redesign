@@ -1,5 +1,7 @@
-import { Wallet, Banknote, Globe, ShieldCheck, UserCheck, PieChart } from "lucide-react"; 
-import {  UserPlus, CreditCard, User, MapPin } from "lucide-react";
+import { Download, Award, Shield, GraduationCap, Users, Headphones } from "lucide-react";
+import article01 from '../assets/articles/1.jpg';
+import article02 from '../assets/articles/2.jpg';
+import article03 from '../assets/articles/3.jpg';
 
 //Navbar
 export const navItems = [
@@ -8,89 +10,55 @@ export const navItems = [
   { label: "Support", href: "#" },
 ];
 
-//features section
-export const features = [
-  {
-    icon: <Wallet />,
-    text: "Secure Transactions",
-    description:
-      "Ensure your financial transactions are secure with top-notch encryption and security protocols.",
-  },
-  {
-    icon: <Banknote />,
-    text: "Account Management",
-    description:
-      "Easily manage your accounts, view statements, and track your spending with our intuitive account management tools.",
-  },
-  {
-    icon: <Globe />,
-    text: "Global Accessibility",
-    description:
-      "Access your account and perform transactions from anywhere in the world with our global banking services.",
-  },
-  {
-    icon: <ShieldCheck />,
-    text: "Fraud Protection",
-    description:
-      "Benefit from advanced fraud detection and protection measures to keep your account safe from unauthorized access.",
-  },
-  {
-    icon: <UserCheck />,
-    text: "Customer Support",
-    description:
-      "Get assistance whenever you need it with our 24/7 customer support and personalized help.",
-  },
-  {
-    icon: <PieChart />,
-    text: "Financial Insights",
-    description:
-      "Analyze your spending habits and get financial insights with our easy-to-use analytics dashboard.",
-  },
-];
-
-//offers section
-export const offers = [
-  {
-    title: "Earn 5% Interest on Your Savings",
-    description: "Boost your savings with a 5% annual interest rate on all savings accounts. Limited time offer!",
-    buttonText: "Open Account",
-    buttonColor: "bg-blue-800",
-    newLabel: true
-  },
-  {
-    title: "No Fees for New Checking Accounts",
-    description: "Open a new checking account with no monthly fees for the first year. Act now!",
-    buttonText: "Sign Up",
-    buttonColor: "bg-green-600",
-    newLabel: false
-  },
-  {
-    title: "Get a $100 Bonus for Referrals",
-    description: "Refer a friend to our bank and get a $100 bonus when they open a new account. There's no limit to how many you can earn!",
-    buttonText: "Refer Now",
-    buttonColor: "bg-yellow-500",
-    newLabel: true
-  }
-];
 
 //services section
 export const services = [
   {
-    title: "Open an Account",
-    icon: <UserPlus />
+    title: "Downloads",
+    icon: <Download />
   },
   {
-    title: "Make a Loan Payment",
-    icon: <CreditCard />
+    title: "Certifications",
+    icon: <Award />
   },
   {
-    title: "Find a Mortgage Loan Officer",
-    icon: <User />
+    title: "Cisco Validated",
+    icon: <Shield />
   },
   {
-    title: "Visit a Branch",
-    icon: <MapPin />
+    title: "Training",
+    icon: <GraduationCap />
+  },
+  {
+    title: "Community",
+    icon: <Users />
+  },
+  {
+    title: "Support",
+    icon: <Headphones />
   }
+];
+
+//articles section
+export const articles = [
+  {
+    title: "Cisco Networking Cloud",
+    description: "Remediate the highest-priority incidents with an AI-first XDR solution.",
+    image: article01,
+    link: "#"
+  },
+  {
+    title: "Cisco XDR with AI Assistant",
+    description: "Remediate the highest-priority incidents with an AI-first XDR solution.",
+    image: article02,
+    link: "#"
+  },
+  {
+    title: "Secure Firewall 1200 Series",
+    description: "Compact, all-in-one firewall for your distributed enterprise branch.",
+    image: article03,
+    link: "#"
+  },
 ];
 
 
