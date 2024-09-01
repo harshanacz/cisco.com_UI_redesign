@@ -4,7 +4,9 @@ import { articles } from '../constants';
 
 const ArticlesSection = () => {
   return (
-    <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6 px-16 py-16">
+    <div>
+      <h1 className="text-3xl font-semibold text-center mt-24">Our latest innovations</h1>
+      <div className="grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-3 gap-6 px-16 py-16">
       {articles.map((article, index) => (
         <ArticleBox
           key={index}
@@ -14,6 +16,7 @@ const ArticlesSection = () => {
           link={article.link}
         />
       ))}
+    </div>
     </div>
   );
 };

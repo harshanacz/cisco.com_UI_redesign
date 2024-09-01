@@ -2,6 +2,8 @@ import { Download, Award, Shield, GraduationCap, Users, Headphones } from "lucid
 import article01 from '../assets/articles/1.jpg';
 import article02 from '../assets/articles/2.jpg';
 import article03 from '../assets/articles/3.jpg';
+import intro1 from '../assets/intro/2.png';
+import intro2 from '../assets/intro/3.png';
 
 //Navbar
 export const navItems = [
@@ -58,6 +60,22 @@ export const articles = [
     description: "Compact, all-in-one firewall for your distributed enterprise branch.",
     image: article03,
     link: "#"
+  },
+];
+
+//Intro section
+export const intro = [
+  {
+    title: "Grow your business with enterprise-grade solutions",
+    description: "Unleash the potential of your small or medium business with Cisco's scalable, easy-to-operate solutions featuring intuitive IT management and round-the-clock support.",
+    image: intro1,
+    right: true,
+  },
+  {
+    title: "Build network assurance expertise with Cisco U.",
+    description: "Harness the power of end-to-end visibility and proactive monitoring with our free tutorials. ",
+    image: intro2,
+    right: false,
   },
 ];
 
