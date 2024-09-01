@@ -1,6 +1,7 @@
 import ArticlesSection from "./components/ArticlesSection";
 import CalltoActionSection from "./components/CalltoActionSection";
 import Footer from "./components/Footer";
+import GoogleMap from "./components/GoogleMap";
 import HeroSection from "./components/HeroSection";
 import IntroSection from "./components/IntroSection";
 import Navbar from "./components/Navbar";
@@ -16,6 +17,7 @@ function App() {
     <ArticlesSection />
     <IntroSection />
     <CalltoActionSection />
+    {/* <GoogleMap/> */}
     <Footer/>
    </>
   );
