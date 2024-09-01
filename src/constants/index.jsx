@@ -79,28 +79,27 @@ export const intro = [
   },
 ];
 
-
 // footer
 export const resourcesLinks = [
-  { href: "#", text: "Online Banking" },
-  { href: "#", text: "Mobile Banking" },
-  { href: "#", text: "Security Tips" },
-  { href: "#", text: "FAQs" },
-  { href: "#", text: "Customer Support" },
+  { href: "#", text: "Developer Resources" },
+  { href: "#", text: "API Documentation" },
+  { href: "#", text: "Tech Blog" },
+  { href: "#", text: "Product Support" },
+  { href: "#", text: "Security Center" },
 ];
 
 export const platformLinks = [
-  { href: "#", text: "Personal Banking" },
-  { href: "#", text: "Business Banking" },
-  { href: "#", text: "Credit Cards" },
-  { href: "#", text: "Loans" },
-  { href: "#", text: "Investment Services" },
+  { href: "#", text: "Cloud Services" },
+  { href: "#", text: "AI Solutions" },
+  { href: "#", text: "Data Analytics" },
+  { href: "#", text: "DevOps Tools" },
+  { href: "#", text: "IoT Platforms" },
 ];
 
 export const communityLinks = [
   { href: "#", text: "About Us" },
   { href: "#", text: "Careers" },
-  { href: "#", text: "News & Media" },
-  { href: "#", text: "Community Involvement" },
+  { href: "#", text: "Press & Media" },
+  { href: "#", text: "Corporate Responsibility" },
   { href: "#", text: "Contact Us" },
 ];

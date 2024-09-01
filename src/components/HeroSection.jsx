@@ -1,5 +1,5 @@
 import React from 'react';
-import desktopBackground from '../assets/bg.png';
+import desktopBackground from '../assets/bg2.png';
 
 
 const HeroSection = () => {
@@ -10,8 +10,8 @@ const HeroSection = () => {
                 className="absolute inset-0 bg-cover bg-center"
                 style={{
                     backgroundImage: `url(${desktopBackground})`,
-                    filter: 'blur(3px)',
-                    zIndex: -1,
+                    // filter: 'blur(3px)',
+                    // zIndex: -1,
                     height: 'calc(100vh - 70px)',
                 }}
             />

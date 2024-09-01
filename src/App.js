@@ -1,4 +1,6 @@
 import ArticlesSection from "./components/ArticlesSection";
+import CalltoActionSection from "./components/CalltoActionSection";
+import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import IntroSection from "./components/IntroSection";
 import Navbar from "./components/Navbar";
@@ -13,6 +15,8 @@ function App() {
     <QuickAccessSection />
     <ArticlesSection />
     <IntroSection />
+    <CalltoActionSection />
+    <Footer/>
    </>
   );
 }
